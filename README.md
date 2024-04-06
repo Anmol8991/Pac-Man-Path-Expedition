@@ -1,6 +1,6 @@
 # Maze Navigation Project
 
-## CS 520 - GHOST IN THE MAZE
+## CS 520 - GHOSTS IN THE MAZE
 
 Following steps need to be performed to replicate the environment I am using on Miniconda:
 
