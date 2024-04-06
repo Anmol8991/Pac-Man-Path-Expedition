@@ -30,7 +30,7 @@ Following steps need to be performed to replicate the environment I am using on 
   {Where C* is the true minimal cost}
 - It is more memory efficient than BFS because it expands lesser nodes (as it has an estimate guiding it or biasing it towards the goal, essentially enabling it to prune out paths with less likelihood of success if followed.
 - Useful and replaceable with BFS wherever it is possible to direct the search towards something (i.e. a Goal) <br>
-**What was our Heuristic?** <br>
+**Q: What was our Heuristic?** <br>
 - In addition to common heuristics like Manhattan distance and Euclidean distance, Dr. Cowan
 had also mentioned that one could calculate heuristics by working through a relaxed version of
 the problem. The answer to the problem's relaxed version could then be applied to the real
