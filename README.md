@@ -19,7 +19,17 @@ Following steps need to be performed to replicate the environment I am using on 
 
 ### Agent Strategies
 
-- **Agent 1:** Utilized BFS for path planning without considering ghost locations during execution.
+- **Agent 1:** Utilized A* Search Algorithm for path planning without considering ghost locations during execution.
+**What was our Heuristic?**
+In addition to common heuristics like Manhattan distance and Euclidean distance, Dr. Cowan
+had also mentioned that one could calculate heuristics by working through a relaxed version of
+the problem. The answer to the problem's relaxed version could then be applied to the real
+problem.
+In our case, we relaxed the problem by eliminating all of the ghosts from it, then we located the
+best path through the maze from the present node to the destination node and set the heuristic
+equal to the number of steps it would take to get there. So after loading a maze, we would
+calculate these values and store them in a map that would be available to the agent throughout
+the run.
 - **Agent 2:** Similar to Agent 1 but replanned paths if blocked by ghosts.
 - **Agent 3:** (**Pac-Man**) Employed a Monte Carlo approach, simulating agent movements to determine optimal paths.
 - **Agent 4:** Improved upon Agent 3 by considering ghost regions and path weights.
