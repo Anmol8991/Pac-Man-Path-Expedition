@@ -26,7 +26,7 @@ Following steps need to be performed to replicate the environment I am using on 
 ### Challenges Faced and Solutions
 - **Computational Bottleneck:** Attempted multiprocessing and set limitations to mitigate endless simulations.
 - **Agent Performance Analysis:** Evaluated agents' performance considering computational constraints and information availability.
-- 
+
 ### Code Breakdown
 - **Maze Generation:** Automated pipeline for generating and storing mazes as CSV files.
     - **maze.py**: Generates random mazes with a 0.28 blocking rule, verifies maze correctness, and saves them as CSV files.
@@ -34,7 +34,8 @@ Following steps need to be performed to replicate the environment I am using on 
     - **csvops.py**: Facilitates CSV file creation based on matrices.
 
 ### Ghosts
-    - **ghost.py**: Defines the Ghost class, manages its position, and ensures reachable spawning.
+
+- **ghost.py**: Defines the Ghost class, manages its position, and ensures reachable spawning.
     This code has the ghost class (for the ghost objects in the maze) which has necessary attributes
     like row and col indicating its position on the maze and methods like spawnGhost and
     moveGhost that spawn the ghost and move it respectively. The spawnGhost method makes
