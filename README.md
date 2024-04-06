@@ -20,7 +20,7 @@ Following steps need to be performed to replicate the environment I am using on 
 ### Agent Strategies
 
 - **Agent 1:** Utilized A* Search Algorithm for path planning without considering ghost locations during execution. <br>
-**What was our Heuristic?**
+**What was our Heuristic?** <br>
 In addition to common heuristics like Manhattan distance and Euclidean distance, Dr. Cowan
 had also mentioned that one could calculate heuristics by working through a relaxed version of
 the problem. The answer to the problem's relaxed version could then be applied to the real
