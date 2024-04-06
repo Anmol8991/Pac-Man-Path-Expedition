@@ -1,5 +1,4 @@
-# Maze Navigation Project
-
+# Pac-Man-Path-Expedition
 ## CS 520 - GHOSTS IN THE MAZE
 
 Following steps need to be performed to replicate the environment I am using on Miniconda:
