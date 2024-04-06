@@ -20,12 +20,22 @@ Following steps need to be performed to replicate the environment I am using on 
 ### Agent Strategies
 
 - **Agent 1:** Utilized A* Search Algorithm for path planning without considering ghost locations during execution. <br>
+ **`A* Search`** <br>
+- Uses Priority Queue as the Fringe with its priority being a function of the actual cost till that point and the estimated cost till the goal node.
+- The estimated cost till the goal node is called the Heuristic (e.g. It can be as simple as the city block distance between 2 points also known as the Manhattan Distance)
+- We take 𝑭(𝒏) = 𝑮(𝒏) + 𝑯(𝒏)
+  {Where G is the actual cost and H is the heuristic cost or the estimated cost}
+- A* with an Optimistic/Admissible heuristic always gives an optimal path
+- An Optimistic Heuristic (H) is one that follows: 𝑯(𝒏) ≤𝑪∗(𝒏,𝑮)
+  {Where C* is the true minimal cost}
+- It is more memory efficient than BFS because it expands lesser nodes (as it has an estimate guiding it or biasing it towards the goal, essentially enabling it to prune out paths with less likelihood of success if followed.
+- Useful and replaceable with BFS wherever it is possible to direct the search towards something (i.e. a Goal)
 **What was our Heuristic?** <br>
-In addition to common heuristics like Manhattan distance and Euclidean distance, Dr. Cowan
+- In addition to common heuristics like Manhattan distance and Euclidean distance, Dr. Cowan
 had also mentioned that one could calculate heuristics by working through a relaxed version of
 the problem. The answer to the problem's relaxed version could then be applied to the real
 problem.
-In our case, we relaxed the problem by eliminating all of the ghosts from it, then we located the
+- In our case, we relaxed the problem by eliminating all of the ghosts from it, then we located the
 best path through the maze from the present node to the destination node and set the heuristic
 equal to the number of steps it would take to get there. So after loading a maze, we would
 calculate these values and store them in a map that would be available to the agent throughout
