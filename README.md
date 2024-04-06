@@ -19,7 +19,7 @@ Following steps need to be performed to replicate the environment I am using on 
 ### Agent Strategies
 - **Agent 1:** Utilized BFS for path planning without considering ghost locations during execution.
 - **Agent 2:** Similar to Agent 1 but replanned paths if blocked by ghosts.
-- **Agent 3:** Employed a Monte Carlo approach, simulating agent movements to determine optimal paths.
+- **Agent 3:** Employed a Monte Carlo approach, simulating agent movements to determine optimal paths.(**Pac-Man**)
 - **Agent 4:** Improved upon Agent 3 by considering ghost regions and path weights.
 - **Agent 5:** Modified to operate without information on ghosts within walls.
 
